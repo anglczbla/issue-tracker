@@ -1,4 +1,4 @@
-import { z } from "@/node_modules/zod/v3/external.cjs";
+import { z } from "zod";
 
 export const createIssueSchema = z.object({
     title: z.string().min(1, 'Title is required').max(255),
